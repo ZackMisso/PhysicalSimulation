@@ -1,0 +1,29 @@
+Each separate physical simulation experiment gets its own folder.
+Each folder will have a class that extends the Experiment class
+to control the overall simulation.
+
+This class should have the GUI info for the experiment in a separate
+file (TBDone once I finish my GLFW SVG GUI).
+
+All classes that are a part of an experiment go in the experiment's
+folder to keep the main source code folders from becoming too out
+if control.
+
+An experiment's directory should look like the following:
+
+../experiments/example/
+    exampleExperiment.cpp/.h
+    exampleGUI.xml
+    src/
+        experimentOnlyClass.cpp/.h
+        experimentOnlyClass2.cpp/.h
+    shader/  <-- experimentOnlyShaders
+        vert/
+        frag/
+        geom/
+        comp/
+        tesc/
+        tese/
+    bake/ <-- results of running the experiment and baking the data
+        bakedData.data
+
