@@ -18,6 +18,7 @@ public:
 	Manifold();
   Manifold(PhysicsObject* a,PhysicsObject* b);
 	~Manifold();
+  void clear();
   // physics methods
   void process();
   // getter methods

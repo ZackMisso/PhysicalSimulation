@@ -25,6 +25,14 @@ Manifold::~Manifold() {
   delete contactNormals;
 }
 
+void Manifold::clear() {
+  while(contactPoints->getSize()) delete contactPoints->removeLast();
+  while(contactNormals->getSize()) delete contactNormals->removeLast();
+  one = 0x0;
+  two = 0x0;
+  hasCollided = false;
+}
+
 void Manifold::process() {
   // to be implemented
 }
