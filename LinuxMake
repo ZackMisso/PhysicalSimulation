@@ -10,6 +10,16 @@ PROD=firal
 
 #HDRS= $(shell ls *.h)
 SRCS= $(shell ls *.cpp)
+SRCS+= $(shell ls bake/*.cpp)
+SRCS+= $(shell ls dataStructures/*.cpp)
+SRCS+= $(shell ls experiments/*.cpp)
+SRCS+= $(shell ls geometry/*.cpp)
+SRCS+= $(shell ls math/*.cpp)
+SRCS+= $(shell ls particles/*.cpp)
+SRCS+= $(shell ls perf/*.cpp)
+SRCS+= $(shell ls peri/*.cpp)
+SRCS+= $(shell ls physics/*.cpp)
+SRCS+= $(shell ls views/*.cpp)
 
 OBJS= $(patsubst %.cpp, %.o, $(SRCS))
 
@@ -24,3 +34,13 @@ $(PROD): $(OBJS)
 clean:
 	rm -f $(PROD)
 	rm -f *.o
+	rm -f bake/*.o
+	rm -f dataStructures/*.o
+	rm -f experiments/*.o
+	rm -f geometry/*.o
+	rm -f math/*.o
+	rm -f particles/*.o
+	rm -f perf/*.o
+	rm -f peri/*.o
+	rm -f physics/*.o
+	rm -f views/*.o
