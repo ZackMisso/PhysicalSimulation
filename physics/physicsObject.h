@@ -3,6 +3,8 @@
 #include "../globalInclude.h"
 #include "../geometry/geom.h"
 
+// TODO :: replace instance variables with PhysicsState ref
+
 class PhysicsObject {
 private:
   Geom* geometry;

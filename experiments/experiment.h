@@ -1,6 +1,8 @@
 #pragma once
 
 #include "../globalInclude.h"
+#include "../physics/physicsWorld.h"
+#include "experimentInterface.h"
 
 enum ExperimentRunMode {
   EX_RUN_INTERACTIVE,      // allows the user to interact with the program
@@ -18,6 +20,7 @@ private:
   ExperimentRunMode mode;
 protected:
   ExperimentInterface* interface; // <-- will be an extension of ZGUI once thats done
+  PhysicsWorld* physicsWorld;
   BakeSystem* bakeSystem;
   percision timeStep;
 public:
