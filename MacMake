@@ -18,6 +18,7 @@ SRCS+= $(shell ls particles/*.cpp)
 SRCS+= $(shell ls perf/*.cpp)
 SRCS+= $(shell ls peri/*.cpp)
 SRCS+= $(shell ls physics/*.cpp)
+SRCS+= $(shell ls physics/rigidBodies/*.cpp)
 SRCS+= $(shell ls shaderClasses/*.cpp)
 SRCS+= $(shell ls views/*.cpp)
 
@@ -43,5 +44,6 @@ clean:
 	rm -f perf/*.o
 	rm -f peri/*.o
 	rm -f physics/*.o
+	rm -f physics/rigidBodies/*.o
 	rm -f shaderClasses/*.o
 	rm -f views/*.o
