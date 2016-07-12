@@ -20,7 +20,6 @@ SRCS+= $(shell ls peri/*.cpp)
 SRCS+= $(shell ls physics/*.cpp)
 SRCS+= $(shell ls physics/rigidBodies/*.cpp)
 SRCS+= $(shell ls shaderClasses/*.cpp)
-SRCS+= $(shell ls views/*.cpp)
 
 OBJS= $(patsubst %.cpp, %.o, $(SRCS))
 
@@ -46,4 +45,3 @@ clean:
 	rm -f physics/*.o
 	rm -f physics/rigidBodies/*.o
 	rm -f shaderClasses/*.o
-	rm -f views/*.o

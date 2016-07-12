@@ -1,5 +1,7 @@
 #pragma once
 
+// particles do not need transforms only physics states.
+
 #include "../globalInclude.h"
 #inclide "../physics/physicsState.h"
 
