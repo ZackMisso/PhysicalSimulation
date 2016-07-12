@@ -58,3 +58,4 @@ void Experiment::cleanup() { }
 void Experiment::render() { }
 void Experiemnt::physicsStep(percision dt) { }
 
+string Experiment::getName() { return name; }

@@ -3,6 +3,9 @@
 #include "../globalInclude.h"
 #include "../physics/physicsWorld.h"
 #include "experimentInterface.h"
+#include <string>
+
+using namespace std;
 
 enum ExperimentRunMode {
   EX_RUN_INTERACTIVE,      // allows the user to interact with the program
@@ -22,6 +25,7 @@ protected:
   ExperimentInterface* interface; // <-- will be an extension of ZGUI once thats done
   PhysicsWorld* physicsWorld;
   BakeSystem* bakeSystem;
+  string name;
   percision timeStep;
 public:
   Experiment();
@@ -45,4 +49,6 @@ public:
   virtual void cleanup();
   virtual void render();
   virtual void physicsStep(percision dt);
+  // getter methods
+  string getName();
 };
