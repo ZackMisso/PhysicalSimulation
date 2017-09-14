@@ -2,11 +2,11 @@
 
 using namespace std;
 
-string getStringInput();
-ExperimentRunMode getRunMode(bool display,char* mode);
-int getIntInput();
-double getPercisionInput();
-bool getBoolInput();
+// string getStringInput();
+// ExperimentRunMode getRunMode(bool display,char* mode);
+// int getIntInput();
+// double getPercisionInput();
+// bool getBoolInput();
 
 int main(int argc,char* argv[]) {
   cout << "Hello Lord, Firal" << endl;
@@ -44,28 +44,28 @@ int main(int argc,char* argv[]) {
   // return 0;
 }
 
-string getStringInput() {
-  string str;
-  // to be implemented
-  return str;
-}
-
-// ExperimentRunMode getRunMode(bool display,char* mode) {
+// string getStringInput() {
+//   string str;
 //   // to be implemented
-//   return EX_RUN_VISUAL;
+//   return str;
 // }
-
-int getIntInput() {
-  // to be implemented
-  return -1;
-}
-
-double getPercisionInput() {
-  // to be implemented
-  return 0.0;
-}
-
-bool getBoolInput() {
-  // to be implemented
-  return false;
-}
+//
+// // ExperimentRunMode getRunMode(bool display,char* mode) {
+// //   // to be implemented
+// //   return EX_RUN_VISUAL;
+// // }
+//
+// int getIntInput() {
+//   // to be implemented
+//   return -1;
+// }
+//
+// double getPercisionInput() {
+//   // to be implemented
+//   return 0.0;
+// }
+//
+// bool getBoolInput() {
+//   // to be implemented
+//   return false;
+// }
