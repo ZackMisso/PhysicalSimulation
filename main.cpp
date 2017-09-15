@@ -818,18 +818,18 @@ public:
 
         /* No need to store a pointer, the data structure will be automatically
            freed when the parent window is deleted */
-        // new Label(window, "Push buttons", "sans-bold");
-        //
-        // Button *b = new Button(window, "Plain button");
-        // b->setCallback([] { cout << "pushed!" << endl; });
-        // b->setTooltip("short tooltip");
+        new Label(window, "Push buttons", "sans-bold");
+
+        Button *b = new Button(window, "Plain button");
+        b->setCallback([] { cout << "pushed!" << endl; });
+        b->setTooltip("short tooltip");
         //
         // /* Alternative construction notation using variadic template */
-        // b = window->add<Button>("Styled", ENTYPO_ICON_ROCKET);
-        // b->setBackgroundColor(Color(0, 0, 255, 25));
-        // b->setCallback([] { cout << "pushed!" << endl; });
-        // b->setTooltip("This button has a fairly long tooltip. It is so long, in "
-        //         "fact, that the shown text will span several lines.");
+        b = window->add<Button>("Styled", ENTYPO_ICON_ROCKET);
+        b->setBackgroundColor(Color(0, 0, 255, 25));
+        b->setCallback([] { cout << "pushed!" << endl; });
+        b->setTooltip("This button has a fairly long tooltip. It is so long, in "
+                "fact, that the shown text will span several lines.");
         //
         // new Label(window, "Toggle buttons", "sans-bold");
         // b = new Button(window, "Toggle me");
@@ -1154,7 +1154,7 @@ public:
         //     }
         // });
 
-        // performLayout();
+        performLayout();
 
         /* All NanoGUI widgets are initialized at this point. Now
            create an OpenGL shader to draw the main window contents.
